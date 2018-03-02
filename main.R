@@ -4,7 +4,8 @@ lapply(listOfFiles,source)
 
 if(!"ds" %in% ls()){ds <- get_ssnap()}
 
-ds <- internal_variable_rename(dt)
+ds <- internal_process_variables(ds)
+ds <- internal_variable_rename(ds)
 
 
 
